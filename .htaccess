@@ -1,0 +1,14 @@
+RewriteEngine On
+
+# Disabling Directory Browse
+Options -Indexes
+
+# Custom Error Page
+ErrorDocument 404 /error/404/
+ErrorDocument 413 /error/413/
+
+#
+php_value upload_max_filesize 128M
+php_value post_max_size 128M
+php_value max_execution_time 300
+php_value max_input_time 300

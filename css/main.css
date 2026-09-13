@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+body {
+    background-color: #000000;
+    color: #fff;
+}
+/* header */
+header .main-nav-btn {
+    margin: auto;
+    text-align: center;
+}
+header .main-nav-btn a {
+    display: inline-block;
+    position: relative;
+    width: max-content;
+    margin: 4px auto;
+    padding: 8px;
+    vertical-align: middle;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+}
+header .main-nav-btn a img {
+    display: block;
+    max-height: 50px;
+    margin: 4px auto;
+    border-radius: 4px;
+}
+header .main-nav-btn a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(to right, red, blue);
+    border-radius: 100px;
+    transform: scaleX(0);
+    transition: transform 100ms;
+}
+header .main-nav-btn a:hover::after {
+    width: 100%;
+    transform: scaleX(1);
+    transition: transform 100ms;
+}
+header .main-nav-btn #home-nav {
+    float: left;
+}
+header .main-nav-btn #home-nav::after, header .main-nav-btn #cart-nav::after {
+    background: #000000;
+}
+header .main-nav-btn #home-nav img {
+    max-height: 100px;
+    display: inline;
+    vertical-align: middle;
+}
+/* footer */
+footer .footer-about {
+    margin-top: 100px;
+    padding: 15px;
+    background-color: #000000;
+}
+footer .footer-about .about-title {
+    margin-top: 8px;
+    text-align: center;
+}
+footer .footer-about .about-title .footer-img {
+    margin: auto;
+    margin-bottom: 8px;
+    width: 65px;
+    height: 65px;
+    background-color: #909090;
+}
+footer .footer-about .about-title .footer-img img {
+    width: 100%;
+    color: #fff;
+}
+footer .footer-about .footer-btn {
+    margin-top: 30px;
+    background-color: #fff;
+}
+footer .footer-about a {
+    margin: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    color: #000000;
+}
+footer .footer-about h4 {
+    margin-top: 15px;
+    padding: 8px;
+    font-weight: normal;
+}
+footer .footer-about h4 a {
+    margin: 0;
+    font-weight: normal;
+    font-style: italic;
+    color: #fff;
+}
+footer .footer-about h4 a:hover {
+    color: #808080;
+}
+footer .footer-about .about-title h1, footer .footer-about .about-title h6 {
+    margin: 4px auto;
+}
+/* cart btn */
+main .cart-btn {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 4px auto;
+    margin-top: 14px;
+    padding: 8px;
+    background-color: #ddd;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 4px;
+}
+main .cart-btn img {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000000;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+main .cart-btn:hover {
+    background-color: #000000;
+    color: #fff;
+}
+main .cart-btn:hover img {
+    border: 1px solid #fff;
+}
+/* chatbox */
+.chatbox {
+    display: block;
+    position: sticky;
+    float: right;
+    height: 65px;
+    bottom: 120px;
+    margin-top: -150px;
+    margin-right: 30px;
+}
+.chatbox img {
+    display: block;
+    height: 65px;
+    border-radius: 15px;
+}
+.chatbox img:hover {
+    transform: scale(105%);
+}
